@@ -12,7 +12,7 @@ async def streaming(center_freq):
     fs = 250e3
     sdr.set_sample_rate(fs)
     sdr.set_center_freq(center_freq*1e6)
-    N_samples = 1024*6*10
+    N_samples = 1024*6*5
     sample_rate_audio = fs/6
     
     pya = pyaudio.PyAudio()
